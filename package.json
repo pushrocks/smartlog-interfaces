@@ -1,0 +1,18 @@
+{
+  "name": "commonlog",
+  "version": "1.0.1",
+  "description": "interfaces for the smartlog universe",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "author": "Lossless GmbH",
+  "license": "",
+  "scripts": {
+    "test": "(npmts)",
+    "format": "(gitzone format)"
+  },
+   "devDependencies": {
+    "tapbundle": "^1.0.13"
+  },
+  "dependencies": {
+  }
+}
