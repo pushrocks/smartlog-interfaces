@@ -1,11 +1,11 @@
 {
-  "name": "commonlog",
+  "name": "smartlog-interfaces",
   "version": "1.0.2",
   "description": "interfaces for the smartlog universe",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "author": "Lossless GmbH",
-  "license": "",
+  "license": "MIT",
   "scripts": {
     "test": "(npmts)",
     "format": "(gitzone format)"
