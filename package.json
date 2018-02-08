@@ -7,7 +7,7 @@
   "author": "Lossless GmbH",
   "license": "MIT",
   "scripts": {
-    "test": "(npmts)",
+    "test": "(npmts --notest)",
     "format": "(gitzone format)"
   },
   "devDependencies": {
