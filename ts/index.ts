@@ -17,3 +17,11 @@ export interface ILogContext {
 
 export type TEnvironment = "local" | "test" | "staging" | "production";
 export type TRuntime = "node" | "browser";
+
+export interface IHandleLogFunc {
+  (logObject): void
+}
+
+export interface ILogDestination {
+  handleLog: IHandleLogFunc
+}
