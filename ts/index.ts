@@ -1,10 +1,6 @@
-export type TLogLevel =
-  | "error"
-  | "warn"
-  | "info"
-  | "verbose"
-  | "debug"
-  | "silly";
+export type TLogLevel = 'error' | 'warn' | 'info' | 'verbose' | 'debug' | 'silly';
+export type TEnvironment = 'local' | 'test' | 'staging' | 'production';
+export type TRuntime = 'node' | 'browser';
 
 export interface ILogContext {
   zone?: string;
@@ -15,13 +11,12 @@ export interface ILogContext {
   runtime: TRuntime;
 }
 
-export type TEnvironment = "local" | "test" | "staging" | "production";
-export type TRuntime = "node" | "browser";
-
-export interface IHandleLogFunc {
-  (logObject): void
+export interface ILogPackage {
+  logContext: ILogContext;
+  logLevel: TLogLevel
+  message: string;
 }
 
 export interface ILogDestination {
-  handleLog: IHandleLogFunc
+  handleLog: (ILogPackage) => void;
 }
