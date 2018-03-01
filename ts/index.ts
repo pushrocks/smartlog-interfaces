@@ -13,7 +13,7 @@ export interface ILogContext {
 
 export interface ILogPackage {
   logContext: ILogContext;
-  logLevel: TLogLevel
+  logLevel: TLogLevel;
   message: string;
 }
 
