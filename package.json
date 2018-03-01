@@ -1,6 +1,6 @@
 {
   "name": "smartlog-interfaces",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "interfaces for the smartlog universe",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
