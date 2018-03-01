@@ -18,5 +18,5 @@ export interface ILogPackage {
 }
 
 export interface ILogDestination {
-  handleLog: (ILogPackage) => void;
+  handleLog: (logPackage: ILogPackage) => void;
 }

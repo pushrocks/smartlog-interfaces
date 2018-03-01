@@ -1,4 +1,6 @@
-export declare type TLogLevel = "error" | "warn" | "info" | "verbose" | "debug" | "silly";
+export declare type TLogLevel = 'error' | 'warn' | 'info' | 'verbose' | 'debug' | 'silly';
+export declare type TEnvironment = 'local' | 'test' | 'staging' | 'production';
+export declare type TRuntime = 'node' | 'browser';
 export interface ILogContext {
     zone?: string;
     company?: string;
@@ -7,11 +9,11 @@ export interface ILogContext {
     environment: TEnvironment;
     runtime: TRuntime;
 }
-export declare type TEnvironment = "local" | "test" | "staging" | "production";
-export declare type TRuntime = "node" | "browser";
-export interface IHandleLogFunc {
-    (logObject: any): void;
+export interface ILogPackage {
+    logContext: ILogContext;
+    logLevel: TLogLevel;
+    message: string;
 }
 export interface ILogDestination {
-    handleLog: IHandleLogFunc;
+    handleLog: (logPackage: ILogPackage) => void;
 }
