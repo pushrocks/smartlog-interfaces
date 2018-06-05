@@ -1,16 +1,19 @@
 {
-  "name": "smartlog-interfaces",
+  "name": "@pushrocks/smartlog-interfaces",
   "version": "1.0.8",
+  "private": false,
   "description": "interfaces for the smartlog universe",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "author": "Lossless GmbH",
   "license": "MIT",
   "scripts": {
-    "test": "(npmts --notest)",
+    "test": "tsrun test/test.ts",
+    "build": "(npmts --notest)",
     "format": "(gitzone format)"
   },
   "devDependencies": {
+    "@gitzone/tsrun": "^1.0.4",
     "tapbundle": "^1.0.13"
   },
   "dependencies": {}
