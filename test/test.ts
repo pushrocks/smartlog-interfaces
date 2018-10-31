@@ -1,4 +1,4 @@
-import { expect, tap } from 'tapbundle';
+import { expect, tap } from '@pushrocks/tapbundle';
 import * as commonlog from '../ts/index';
 
 tap.test('first test', async () => {

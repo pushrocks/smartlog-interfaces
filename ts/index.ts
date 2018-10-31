@@ -17,6 +17,11 @@ export interface ILogPackage {
   message: string;
 }
 
+export interface ILogPackageAuthenticated {
+  auth: string;
+  logPackage: ILogPackage;
+}
+
 export interface ILogDestination {
   handleLog: (logPackage: ILogPackage) => void;
 }
