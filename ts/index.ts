@@ -1,3 +1,4 @@
+export type TLogType = 'log' | 'increment' | 'gauge' | 'error' | 'success';
 export type TLogLevel = 'error' | 'warn' | 'info' | 'verbose' | 'debug' | 'silly';
 export type TEnvironment = 'local' | 'test' | 'staging' | 'production';
 export type TRuntime = 'node' | 'browser';
@@ -12,8 +13,9 @@ export interface ILogContext {
 }
 
 export interface ILogPackage {
-  logContext: ILogContext;
-  logLevel: TLogLevel;
+  type: TLogType;
+  context: ILogContext;
+  level: TLogLevel;
   message: string;
 }
 
