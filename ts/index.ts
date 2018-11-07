@@ -1,7 +1,30 @@
-export type TLogType = 'log' | 'increment' | 'gauge' | 'error' | 'success';
+/**
+ * the different available log types
+ */
+export type TLogType =
+  | 'log'
+  | 'increment'
+  | 'gauge'
+  | 'error'
+  | 'success'
+  | 'value'
+  | 'finance'
+  | 'compliance';
+
+/**
+ * the available log levels
+ */
 export type TLogLevel = 'silly' | 'info' | 'debug' | 'note' | 'ok' | 'success' | 'warn' | 'error';
+
+/**
+ * the available environments
+ */
 export type TEnvironment = 'local' | 'test' | 'staging' | 'production';
-export type TRuntime = 'node' | 'browser';
+
+/**
+ * the available runtimes
+ */
+export type TRuntime = 'node' | 'chrome' | 'rust';
 
 export interface ILogContext {
   company?: string;
