@@ -9,12 +9,12 @@ export type TLogType =
   | 'success'
   | 'value'
   | 'finance'
-  | 'compliance';
+  | 'compliance'
 
 /**
  * the available log levels
  */
-export type TLogLevel = 'silly' | 'info' | 'debug' | 'note' | 'ok' | 'success' | 'warn' | 'error';
+export type TLogLevel = 'silly' | 'info' | 'debug' | 'note' | 'ok' | 'success' | 'warn' | 'error' | 'lifecycle';
 
 /**
  * the available environments
