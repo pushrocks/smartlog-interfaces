@@ -1,6 +1,6 @@
 {
   "name": "@pushrocks/smartlog-interfaces",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "private": false,
   "description": "interfaces for the smartlog ecosystem",
   "main": "dist/index.js",
