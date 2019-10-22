@@ -1,5 +1,12 @@
 import * as plugins from './smartlog-interfaces.plugins';
 
+import * as requestInterfaces from './smartlog-interfaces.requests';
+
+export {
+  requestInterfaces as request
+};
+
+
 /**
  * the different available log types
  */
