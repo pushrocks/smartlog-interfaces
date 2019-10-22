@@ -2,5 +2,15 @@
   "npmci": {
     "npmGlobalTools": [],
     "npmAccessLevel": "public"
+  },
+  "gitzone": {
+    "module": {
+      "githost": "gitlab.com",
+      "gitscope": "pushrocks",
+      "gitrepo": "smartlog-interfaces",
+      "shortDescription": "interfaces for the smartlog ecosystem",
+      "npmPackagename": "@pushrocks/smartlog-interfaces",
+      "license": "MIT"
+    }
   }
 }

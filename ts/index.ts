@@ -1,3 +1,5 @@
+import * as plugins from './smartlog-interfaces.plugins';
+
 /**
  * the different available log types
  */
