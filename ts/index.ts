@@ -33,8 +33,11 @@ export type TEnvironment = 'local' | 'test' | 'staging' | 'production';
 /**
  * the available runtimes
  */
-export type TRuntime = 'node' | 'chrome' | 'rust';
+export type TRuntime = 'node' | 'chrome' | 'rust' | 'deno';
 
+/**
+ * the log context e.g. what app in what version on what server 
+ */
 export interface ILogContext {
   company?: string;
   companyunit?: string;
@@ -44,13 +47,30 @@ export interface ILogContext {
   zone: string;
 }
 
-export interface ILogPackage {
+/**
+ * the main logpackage
+ */
+export interface ILogPackage<T = unknown> {
+  /**
+   * a unix timestamp in milliseconds
+   */
   timestamp: number;
   type: TLogType;
   context: ILogContext;
   level: TLogLevel;
+  /**
+   * allows grouping of log messages
+   */
+  correlationId: string;
   message: string;
-  data?: any;
+  data?: T;
+}
+
+export interface ILogPackageDataRequest {
+  url: string;
+  pathname: string;
+  method: string;
+  status: string;
 }
 
 export interface ILogPackageAuthenticated {
@@ -58,6 +78,9 @@ export interface ILogPackageAuthenticated {
   logPackage: ILogPackage;
 }
 
+/**
+ * a destination interface for extending smartlog modules
+ */
 export interface ILogDestination {
   handleLog: (logPackage: ILogPackage) => void;
 }
