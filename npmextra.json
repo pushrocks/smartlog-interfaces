@@ -4,6 +4,14 @@
     "npmAccessLevel": "public"
   },
   "gitzone": {
-    "projectType": "npm"
+    "projectType": "npm",
+    "module": {
+      "githost": "gitlab.com",
+      "gitscope": "pushrocks",
+      "gitrepo": "smartlog-interfaces",
+      "shortDescription": "interfaces for the smartlog ecosystem",
+      "npmPackagename": "@pushrocks/smartlog-interfaces",
+      "license": "MIT"
+    }
   }
 }
