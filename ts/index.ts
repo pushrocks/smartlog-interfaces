@@ -2,10 +2,7 @@ import * as plugins from './smartlog-interfaces.plugins';
 
 import * as requestInterfaces from './smartlog-interfaces.requests';
 
-export {
-  requestInterfaces as request
-};
-
+export { requestInterfaces as request };
 
 /**
  * the different available log types
@@ -45,7 +42,7 @@ export type TEnvironment = 'local' | 'test' | 'staging' | 'production';
 export type TRuntime = 'node' | 'chrome' | 'rust' | 'deno';
 
 /**
- * the log context e.g. what app in what version on what server 
+ * the log context e.g. what app in what version on what server
  */
 export interface ILogContext {
   company?: string;
