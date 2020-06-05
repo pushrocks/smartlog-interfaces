@@ -68,11 +68,15 @@ export interface ILogPackage<T = unknown> {
    * allows grouping of log messages
    */
   correlationId: string;
+  /**
+   * the message to log
+   */
   message: string;
   data?: T;
 }
 
 export interface ILogPackageDataRequest {
+  requestCorrelationId: string;
   url: string;
   pathname: string;
   method: string;
