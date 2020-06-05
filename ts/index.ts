@@ -55,7 +55,7 @@ export interface ILogContext {
 
 export interface ILogCorrelation {
   id: string;
-  type: 'group' | 'build' | 'requestchain' | 'job';
+  type: 'none' | 'group' | 'build' | 'requestchain' | 'job';
 }
 
 /**
