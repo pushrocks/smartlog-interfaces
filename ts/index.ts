@@ -53,6 +53,11 @@ export interface ILogContext {
   zone: string;
 }
 
+export interface ILogCorrelation {
+  id: string;
+  type: 'group' | 'build' | 'requestchain' | 'job';
+}
+
 /**
  * the main logpackage
  */
@@ -67,7 +72,7 @@ export interface ILogPackage<T = unknown> {
   /**
    * allows grouping of log messages
    */
-  correlationId: string;
+  correlation: ILogCorrelation;
   /**
    * the message to log
    */
