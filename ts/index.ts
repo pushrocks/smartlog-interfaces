@@ -63,6 +63,11 @@ export interface ILogCorrelation {
    */
   type: 'none' | 'service' | 'build' | 'infrastructure' | 'cdn';
   /**
+   * the instance on which the log is created
+   * use it for pinning logs to a certain instance in a cluster
+   */
+  instance?: string;
+  /**
    * a series of logs
    */
   group?: string;
