@@ -54,8 +54,22 @@ export interface ILogContext {
 }
 
 export interface ILogCorrelation {
+  /**
+   * a unique id for this log
+   */
   id: string;
-  type: 'none' | 'group' | 'build' | 'requestchain' | 'job';
+  /**
+   * the type of this log
+   */
+  type: 'none' | 'service' | 'build' | 'infrastructure' | 'cdn';
+  /**
+   * a series of logs
+   */
+  group?: string;
+  /**
+   * a log that belongs to a transaction. E.g. a Payment or a request traveling through multiple backend instances
+   */
+  transaction?: string;
 }
 
 /**
