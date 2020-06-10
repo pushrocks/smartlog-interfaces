@@ -39,7 +39,7 @@ export type TEnvironment = 'local' | 'test' | 'staging' | 'production';
 /**
  * the available runtimes
  */
-export type TRuntime = 'node' | 'chrome' | 'rust' | 'deno';
+export type TRuntime = 'node' | 'chrome' | 'rust' | 'deno' | 'cloudflare_workers';
 
 /**
  * the log context e.g. what app in what version on what server
