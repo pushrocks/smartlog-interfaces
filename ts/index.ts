@@ -116,5 +116,5 @@ export interface ILogPackageAuthenticated {
  * a destination interface for extending smartlog modules
  */
 export interface ILogDestination {
-  handleLog: (logPackage: ILogPackage) => void;
+  handleLog: (logPackage: ILogPackage) => Promise<void>;
 }
