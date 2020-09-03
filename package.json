@@ -9,20 +9,19 @@
   "license": "MIT",
   "scripts": {
     "test": "tsrun test/test.ts",
-    "build": "(tsbuild --web)",
-    "format": "(gitzone format)"
+    "build": "(tsbuild --web)"
   },
   "devDependencies": {
-    "@gitzone/tsbuild": "^2.1.24",
+    "@gitzone/tsbuild": "^2.1.25",
     "@gitzone/tsrun": "^1.2.12",
-    "@gitzone/tstest": "^1.0.33",
-    "@pushrocks/tapbundle": "^3.2.1",
-    "@types/node": "^14.0.11",
-    "tslint": "^6.1.2",
+    "@gitzone/tstest": "^1.0.44",
+    "@pushrocks/tapbundle": "^3.2.9",
+    "@types/node": "^14.6.3",
+    "tslint": "^6.1.3",
     "tslint-config-prettier": "^1.18.0"
   },
   "dependencies": {
-    "@apiglobal/typedrequest-interfaces": "^1.0.13"
+    "@apiglobal/typedrequest-interfaces": "^1.0.15"
   },
   "files": [
     "ts/**/*",
@@ -35,5 +34,8 @@
     "cli.js",
     "npmextra.json",
     "readme.md"
+  ],
+  "browserslist": [
+    "last 1 chrome versions"
   ]
 }
