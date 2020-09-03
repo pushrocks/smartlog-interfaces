@@ -112,6 +112,11 @@ export interface ILogPackageAuthenticated {
   logPackage: ILogPackage;
 }
 
+export interface ILogPackageArrayAuthenticated {
+  auth: string;
+  logPackages: ILogPackage[];
+}
+
 /**
  * a destination interface for extending smartlog modules
  */
